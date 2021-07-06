@@ -1,0 +1,426 @@
+@font-face {font-family: workSans-semi;src: url(../fonts/WorkSans-SemiBold.ttf);}
+@font-face {font-family: workSans-light;src: url(../fonts/WorkSans-Light.ttf);}
+@font-face {font-family: workSans-med;src: url(../fonts/WorkSans-Medium.ttf);}
+@font-face {font-family: workSans-bold;src: url(../fonts/WorkSans-Bold.ttf);}
+
+html, body,p,br {margin:0;padding:0;line-height: 1}
+a{text-decoration:none}
+a:hover,a{color:black}
+.ws-semi{font-family: workSans-semi;}
+.ws-light{font-family: workSans-light;}
+.ws-med{font-family: workSans-medium;}
+.ws-bold{font-family: workSans-bold;
+font-size: 2em;}
+header{position: fixed;width:100%;z-index:3; border-bottom: solid rgba(128, 128, 128, 0.171) 1px;}
+ul {list-style-type: none;margin: 0; padding:1px 0 0px 0;overflow: hidden;background-color: #ffff;height:100%}
+li {float: left; font-family: ws-light;padding-left:40px;font-size: 0.9em;}
+li a {display: block;text-align: center;padding: 5px 0px 10px 0px;text-decoration: none;}
+li img{display: block;padding:16px 0px 20px 30px;}
+
+@media only screen and (max-width: 844px)
+{
+    .pad50{
+        padding:50px;
+    }
+    /* NAVBAR */
+    .navbar{
+        display: none;
+    }
+    
+    .text-responsive{
+       font-size: 10px;     
+    } 
+    .img-magasin{
+        height: 185px;
+        padding: 1em 0em;
+    }
+    .container-deux-piece-fidelite{
+        width:125px;
+        display:flex;
+        margin-left:-30px;
+        overflow:hidden;
+    }
+    .maillot-deux-piece-fidelite{
+        height: 200px;
+        width:auto;
+        margin-left:-110px; 
+    }
+    
+    .container-une-piece-fidelite{
+        position:relative;
+        width:110px;
+        height:175px;
+        overflow:hidden;
+        margin-left:-15px;
+        
+    }
+    .maillot-une-piece-fidelite{
+        height: 175px;
+        width:auto;
+        margin-left:-90px;
+        z-index:4;  
+    }
+    .bouton-inscription{
+        font-size:1.3em;
+        align-self:center;
+        border:solid black 1px;
+        border-radius: 50px;
+        background-color: transparent;
+        padding: 0.5em 1.4em;
+        width:10em;
+        
+    }
+    
+    .img-magasin1,.img-ensemble-rouge,.img-sv-dentelle,.img-sg,.img-body,.img-nuisette{
+        width:100px;
+        
+    }
+    .img-magasin1{
+        position:relative;
+        
+        height:160px;
+        width:auto
+     
+    }
+    .img-ensemble-rouge{
+        position:relative;
+        bottom:0.8em;
+        height:100px;
+        width:auto
+     
+    }
+    .img-sv-dentelle{
+        position:relative;
+        bottom:1em;
+        height:90px;
+        width:auto;
+    }
+    .img-sg{
+        height:120px;
+        width:auto;
+        position:relative;
+        right:15px;
+        bottom:5px
+    }
+    .img-body{
+        height:100px;
+        width:auto;
+        position:relative;
+        bottom:10px
+    }
+    .img-nuisette{
+        height:70px;
+        width:auto
+    }
+    
+   
+    .boutons-nous-suivre{
+        width:430px
+    }
+    .carrousel-suivre{
+        width:220px;
+        height:150px;
+       
+    }
+
+    .image1-nous-suivre,.image2-nous-suivre,.image3-nous-suivre,.image4-nous-suivre,.image5-nous-suivre,.image6-nous-suivre{
+        width:67px;
+        height:67px;
+        overflow: hidden;
+    }
+    .marg-left-1{
+        margin-left: 0.3em;
+    }
+    .suivre-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+    }
+    .version-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .banniere-rose{
+        display: flex;
+        flex-direction: column;
+    }
+    .desktop{display: none!important;}
+    
+    .magasin-etam-container{
+        display:flex;
+        flex-direction: column;
+    
+}
+.bouton-reseaux{
+    font-size:0.7em;
+    align-self:center;
+    border:solid black 1px;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0.1em 3em;
+    margin-top: 1em;
+    
+}
+} 
+/*Tablette*/
+@media only screen and (min-width: 845px) and (max-width: 1151px) 
+{ 
+    .pad50{
+        padding:50px 0 50px 150px;
+    }
+    .navbar{
+        display: none;
+    }
+    
+    .text-responsive{
+       font-size: 10px;     
+    } 
+    .img-magasin{
+        height: 185px;
+    }
+    .container-deux-piece-fidelite{
+        width:125px;
+        display:flex;
+        margin-left:7em;
+        overflow:hidden;
+    }
+    .maillot-deux-piece-fidelite{
+        height: 200px;
+        width:auto;
+        margin-left:-100px; 
+    }
+    
+    .container-une-piece-fidelite{
+        position:relative;
+        width:110px;
+        height:175px;
+        overflow:hidden;
+        margin-left:-10px;
+        
+    }
+    .maillot-une-piece-fidelite{
+        height: 175px;
+        width:auto;
+        margin-left:-90px;
+        z-index:4;
+    
+    }
+    .bouton-inscription{
+        font-size:0.7em;
+        align-self:center;
+        border:solid black 1px;
+        border-radius: 50px;
+        background-color: transparent;
+       
+        padding: 1em 2em;
+        
+    }
+    
+    .img-magasin1,.img-ensemble-rouge,.img-sv-dentelle,.img-sg,.img-body,.img-nuisette{
+        width:100px;
+        
+    }
+    .img-body{
+        position:relative;
+        
+        height:160px;
+        width:auto
+     
+    }
+    .img-ensemble-rouge{
+        position:relative;
+        bottom:1.4em;
+        height:200px;
+        width:auto
+     
+    }
+    .img-sv-dentelle{
+        position:relative;
+        bottom:1.5em;
+        height:180px;
+        width:auto;
+    }
+    .img-sg{
+        height:240px;
+        width:auto;
+        position:relative;
+        right:35px;
+        bottom:10px
+    }
+    .img-body{
+        height:200px;
+        width:auto;
+        position:relative;
+        bottom:20px
+    }
+    .img-nuisette{
+        height:135px;
+        width:auto
+    }
+    
+   
+    .boutons-nous-suivre{
+        width:430px
+    }
+    .carrousel-suivre{
+        width:450px;
+        height:280px;
+       
+    }
+
+    .image1-nous-suivre,.image2-nous-suivre,.image3-nous-suivre,.image4-nous-suivre,.image5-nous-suivre,.image6-nous-suivre{
+        width:135px;
+        height:135px;
+        overflow: hidden;
+    }
+    .marg-left-1{
+        margin-left: 0.3em;
+    }
+
+    .notdesktop{
+        display: none!important;
+    }
+    .magasin-etam-container{
+        flex-direction: row-reverse;
+        
+    }
+    .bouton-reseaux{
+        font-size:0.7em;
+        align-self:center;
+        border:solid black 1px;
+        border-radius: 50px;
+        background-color: transparent;
+       
+        padding: 1em 2em;
+        
+    }
+ 
+} 
+
+/* LAPTOP */
+@media only screen and (min-width: 1152px)
+{
+    .navbar{
+        display: flex;
+        justify-content:flex-start;
+        
+    }
+    .container-deux-piece-fidelite{
+        width:250px;
+        display:flex;
+        margin-left:10em;
+        overflow:hidden;
+    }
+    .maillot-deux-piece-fidelite{
+        height: 400px;
+        width:auto;
+        margin-left:-220px; 
+    }
+    
+    .container-une-piece-fidelite{
+        position:relative;
+        width:230px;
+        height:340px;
+        overflow:hidden;
+        margin-left:-20px;
+        
+    }
+    .maillot-une-piece-fidelite{
+        height: 340px;
+        width:auto;
+        margin-left:-160px;
+        z-index:4;  
+    }
+    .bouton-inscription{
+        font-size:0.7em;
+        align-self:center;
+        border:solid black 1px;
+        border-radius: 50px;
+        background-color: transparent;
+        padding: 1em 2.7em;
+    }
+    .img-magasin{
+        height: 370px;
+    }
+    .img-body,.img-ensemble-rouge,.img-sv-dentelle,.img-sg,.img-body,.img-nuisette{
+        width:220px;
+    }
+    .img-ensemble-rouge{
+        position:relative;
+        bottom:2.4em
+    }
+    .img-sv-dentelle{
+        position:relative;
+        bottom:3em;
+    }
+    .img-sg{
+        height:400px;
+        width:auto;
+        position:relative;
+        right:70px;
+        bottom:20px
+    }
+    .img-body{
+        height:330px;
+        width:auto;
+        position:relative;
+        bottom:30px
+    }
+    
+    .logo-etam{
+       height:4.3em;
+    } 
+    .boutons-nous-suivre{
+        width:430px
+    }
+    .carrousel-suivre{
+        width:750px;
+        height:450px;
+    }
+
+    .image1-nous-suivre,.image2-nous-suivre,.image3-nous-suivre,.image4-nous-suivre,.image5-nous-suivre,.image6-nous-suivre{
+        width:220px;
+        height:220px;
+        overflow: hidden;
+    }
+    .pad115{
+        padding:115px 0px 35px 25vh;
+    }
+    .padleft50{
+        padding-left: 50px;
+    }
+    .pad-left-1{
+        padding-left: 0.3em;
+    }
+    .notdesktop{
+        display: none!important;
+    }
+    .magasin-etam-container{
+        display:flex;
+        flex-direction: row-reverse;
+        
+    }
+    .bouton-reseaux{
+    font-size:0.7em;
+    align-self:center;
+    border:solid black 1px;
+    border-radius: 50px;
+    background-color: transparent;
+   
+    padding: 1em 2em;
+    
+}
+
+}
+
+
+.pad-bottom-1{
+    padding-bottom: 0.8em;
+}
+
+
+.banniere-rose{
+    background-color: #fff4f7;
+    width:100%;
+}
